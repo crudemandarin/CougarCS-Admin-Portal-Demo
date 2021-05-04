@@ -1,0 +1,17 @@
+<form class="search-form-field">
+    <mat-form-field #searchInputField class="search-input-field">
+        <mat-label>PSID</mat-label>
+        <input matInput type="text" placeholder="Ex. 1234567">
+        <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onClearSearchFieldClick($event)">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <button mat-raised-button style="margin-right: 3rem;" (click)="onGoSearchClick($event)"> Go </button>
+
+    <span> Search Filter </span>
+
+    <mat-radio-group (change)="onRadioButtonClick($event)">
+        <mat-radio-button *ngFor="let filter of filters" [value]="filter.name" [checked]="filter.checked"> {{ filter.name }} </mat-radio-button>
+    </mat-radio-group>
+</form>

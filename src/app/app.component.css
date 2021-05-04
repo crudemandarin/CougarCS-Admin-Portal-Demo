@@ -1,0 +1,24 @@
+.spacer {
+    margin: 1 1 auto;
+}
+
+main {
+    margin: 2rem 3rem;
+}
+
+.custom-form-field {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+}
+.custom-form-field > * {
+    margin: 0 1rem;
+}
+
+.custom-form-field > *:nth-child(1) {
+    margin: 0 0;
+}
+
+.custom-form-field > *:nth-last-child(1) {
+    margin: 0 0;
+}

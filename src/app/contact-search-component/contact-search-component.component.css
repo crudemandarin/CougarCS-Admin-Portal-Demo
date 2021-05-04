@@ -1,0 +1,15 @@
+.search-form-field {
+    width: 100%;
+}
+
+.search-form-field > * {
+    margin-right: 1rem;
+}
+
+.search-input-field {
+    width: 200px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+}

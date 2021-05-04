@@ -1,0 +1,16 @@
+<h1 style="margin-bottom: 0"> Contact Manager </h1>
+<h3 style="margin-bottom: 1rem"> View and manage member information </h3>
+
+<app-contact-search-component></app-contact-search-component>
+
+<div class="custom-form-field table-toolbar">
+    <div class="custom-form-field" style="margin-top: 0rem;">
+        <button mat-raised-button (click)="onAddTableClick($event)"> Add </button>
+        <button mat-raised-button (click)="onEditTableClick($event)"> Edit </button>
+        <button mat-raised-button (click)="onRemoveTableClick($event)"> Remove </button>
+    </div>
+    
+    <button mat-raised-button (click)="onRefreshTableClick($event)"> <mat-icon color="accent">refresh</mat-icon> </button>
+</div>
+
+<app-table> </app-table>
